@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>विंध्य अन्नपूर्णा सेवा सदन चैरिटेबल ट्रस्ट | Vindhyachal</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Noto+Sans+Devanagari:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:'Poppins','Noto Sans Devanagari',sans-serif; background:#FFF9F0; color:#2b2b2b; line-height:1.7; }
+
+  /* HEADER */
+  header { background:linear-gradient(135deg,#8B0000 0%,#FF6B00 100%); color:#fff; padding:15px 30px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; box-shadow:0 4px 20px rgba(0,0,0,0.25); position:sticky; top:0; z-index:1000; }
+  .logo-area { display:flex; align-items:center; gap:15px; }
+  .logo-img { width:70px; height:70px; border-radius:50%; border:3px solid #FFD700; background:#fff; object-fit:cover; box-shadow:0 0 15px rgba(255,215,0,0.6); }
+  header h1 { font-size:19px; font-weight:700; line-height:1.3; }
+  header p { font-size:12px; color:#FFD700; letter-spacing:1px; }
+
+  nav a { color:#fff; margin:0 10px; text-decoration:none; font-weight:600; font-size:14px; padding:6px 12px; border-radius:20px; transition:0.3s; }
+  nav a:hover { background:#FFD700; color:#8B0000; }
+
+  /* SOCIAL BAR */
+  .social-bar { background:#8B0000; padding:10px; text-align:center; }
+  .social-bar a { display:inline-block; margin:0 8px; color:#FFD700; font-size:22px; transition:0.3s; text-decoration:none; }
+  .social-bar a:hover { transform:scale(1.2); color:#fff; }
+
+  /* HERO */
+  .hero { background:linear-gradient(rgba(139,0,0,0.7),rgba(255,107,0,0.65)), url('mandir.jpg') center/cover no-repeat; color:#fff; text-align:center; padding:100px 20px; }
+  .hero-logo { width:130px; height:130px; border-radius:50%; border:4px solid #FFD700; background:#fff; object-fit:cover; margin-bottom:20px; box-shadow:0 0 30px rgba(255,215,0,0.8); }
+  .hero h2 { font-size:40px; margin-bottom:15px; text-shadow:2px 2px 12px rgba(0,0,0,0.7); }
+  .hero p { font-size:19px; max-width:750px; margin:0 auto 25px; text-shadow:1px 1px 6px rgba(0,0,0,0.6); }
+  .btn { background:#FFD700; color:#8B0000; padding:14px 38px; border-radius:40px; text-decoration:none; font-weight:700; font-size:16px; display:inline-block; transition:0.3s; box-shadow:0 5px 20px rgba(0,0,0,0.35); border:none; cursor:pointer; }
+  .btn:hover { background:#fff; transform:translateY(-3px); }
+
+  /* SECTION */
+  .section { padding:65px 20px; max-width:1150px; margin:auto; }
+  .section h3 { color:#8B0000; font-size:30px; text-align:center; margin-bottom:8px; }
+  .section h3::after { content:''; display:block; width:70px; height:4px; background:#FFD700; margin:12px auto 0; border-radius:2px; }
+  .section .sub { text-align:center; color:#777; margin-bottom:35px; font-size:16px; }
+
+  /* CARDS */
+  .cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(270px,1fr)); gap:25px; }
+  .card { background:#fff; border-radius:18px; padding:30px 25px; text-align:center; box-shadow:0 6px 25px rgba(139,0,0,0.1); border-top:5px solid #FF6B00; transition:0.3s; }
+  .card:hover { transform:translateY(-8px); box-shadow:0 14px 35px rgba(139,0,0,0.22); }
+  .card .icon { font-size:48px; margin-bottom:15px; }
+  .card h4 { color:#8B0000; font-size:20px; margin-bottom:10px; }
+  .card p { color:#555; font-size:15px; }
+
+  /* POSTER */
+  .poster-wrap { text-align:center; }
+  .poster-wrap img { max-width:100%; border-radius:18px; box-shadow:0 10px 35px rgba(139,0,0,0.25); border:4px solid #FFD700; }
+
+  /* VIDEO */
+  .video-wrap { position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border-radius:18px; box-shadow:0 10px 35px rgba(139,0,0,0.25); border:4px solid #FFD700; }
+  .video-wrap iframe { position:absolute; top:0; left:0; width:100%; height:100%; }
+
+  /* NAVRATRI */
+  .navratri-box { background:linear-gradient(135deg,#FFF3E0,#FFE0B2); border-radius:22px; padding:50px 25px; text-align:center; border:2px dashed #FF6B00; }
+
+  /* CONTACT */
+  .contact-box { background:#fff; border-radius:20px; padding:40px 30px; box-shadow:0 8px 30px rgba(139,0,0,0.12); max-width:720px; margin:auto; text-align:center; border-top:5px solid #FFD700; }
+  .contact-box a { color:#8B0000; font-weight:700; text-decoration:none; font-size:18px; display:block; margin:14px 0; transition:0.3s; }
+  .contact-box a:hover { color:#FF6B00; }
+  .wa-btn { background:#25D366; color:#fff !important; padding:14px 30px; border-radius:35px; display:inline-block; margin-top:18px; box-shadow:0 5px 18px rgba(37,211,102,0.4); }
+
+  /* FOOTER */
+  footer { background:linear-gradient(135deg,#8B0000,#FF6B00); color:#fff; text-align:center; padding:40px 20px; margin-top:40px; }
+  footer p { margin:8px 0; }
+  footer .jay { color:#FFD700; font-weight:700; font-size:20px; }
+  footer .social-footer a { color:#FFD700; font-size:24px; margin:0 10px; text-decoration:none; }
+
+  /* WHATSAPP FLOAT */
+  .whatsapp-float { position:fixed; bottom:25px; right:25px; background:#25D366; color:#fff; width:62px; height:62px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:32px; text-decoration:none; box-shadow:0 6px 22px rgba(0,0,0,0.35); z-index:999; transition:0.3s; }
+  .whatsapp-float:hover { transform:scale(1.12); }
+
+  @media(max-width:768px) {
+    header { flex-direction:column; gap:12px; text-align:center; padding:15px; }
+    nav a { font-size:12px; margin:0 4px; padding:5px 8px; }
+    .hero { padding:70px 15px; }
+    .hero h2 { font-size:26px; }
+    .hero p { font-size:15px; }
+    .hero-logo { width:100px; height:100px; }
+    .section h3 { font-size:23px; }
+    .logo-img { width:55px; height:55px; }
+    header h1 { font-size:15px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="logo-area">
+    <img src="logo.png" alt="Trust Logo" class="logo-img">
+    <div>
+      <h1>विंध्य अन्नपूर्णा सेवा सदन चैरिटेबल ट्रस्ट</h1>
+      <p>अन्नदान • सेवाभाव • संस्कार</p>
+    </div>
+  </div>
+  <nav>
+    <a href="#home">होम</a>
+    <a href="#about">हमारे बारे में</a>
+    <a href="#work">सेवा कार्य</a>
+    <a href="#poster">संदेश</a>
+    <a href="#video">वीडियो</a>
+    <a href="#navratri">नवरात्रि</a>
+    <a href="#contact">संपर्क</a>
+  </nav>
+</header>
+
+<!-- SOCIAL BAR -->
+<div class="social-bar">
+  <a href="https://www.instagram.com/vindhyaanupurnasevatrust" target="_blank" title="Instagram">📷</a>
+  <a href="https://www.facebook.com/share/v/19XnZCVPPF/" target="_blank" title="Facebook">📘</a>
+  <a href="https://youtube.com/@vindhyaanupurnasevasadantrust" target="_blank" title="YouTube">▶️</a>
+  <a href="https://sites.google.com/view/vindhyaanapurnasevasadantrust/home" target="_blank" title="Old Site">🌐</a>
+</div>
+
+<!-- HERO -->
+<div class="hero" id="home">
+  <img src="logo.png" alt="Maa Vindhyavasini" class="hero-logo">
+  <h2>माँ विंध्यवासिनी की कृपा से सेवा का संकल्प</h2>
+  <p>विंध्याचल धाम के पावन स्थल पर स्थित, यह ट्रस्ट अन्नदान, सेवा और संस्कार के लिए समर्पित है।</p>
+  <a href="#contact" class="btn">हमसे जुड़ें 🙏</a>
+</div>
+
+<!-- ABOUT (Google Sites wala data) -->
+<div class="section" id="about">
+  <h3>हमारे बारे में</h3>
+  <p class="sub">सेवा ही सबसे बड़ा धर्म है</p>
+  <p style="text-align:center; font-size:17px; max-width:900px; margin:auto; color:#444;">
+    विन्ध्य अन्नपूर्णा सेवा सदन ट्रस्ट एक समर्पित सामाजिक एवं धार्मिक संस्था है, जो मानव सेवा को ही सर्वोच्च धर्म मानते हुए निरंतर कार्य कर रही है।
+  </p>
+  <p style="text-align:center; font-size:17px; max-width:900px; margin:20px auto; color:#444;">
+    हमारा मुख्य उद्देश्य समाज के गरीब, असहाय एवं जरूरतमंद लोगों को निःस्वार्थ भाव से भोजन, सहायता और सहयोग प्रदान करना है। हमारी संस्था विशेष रूप से भूखों को भोजन उपलब्ध कराने, जरूरतमंदों की सहायता करने और धार्मिक सेवाओं के माध्यम से समाज में सकारात्मक बदलाव लाने के लिए प्रतिबद्ध है।
+  </p>
+  <p style="text-align:center; font-size:17px; max-width:900px; margin:20px auto; color:#444;">
+    विन्ध्याचल धाम की पावन भूमि से प्रेरणा लेकर, हम सेवा, करुणा और मानवता के मूल्यों को आगे बढ़ाने का प्रयास करते हैं। हमारा विश्वास है कि सच्ची सेवा ही सबसे बड़ा धर्म है, और इसी भावना के साथ हम समाज के हर वर्ग तक मदद पहुँचाने के लिए निरंतर प्रयासरत हैं।
+  </p>
+  <p style="text-align:center; font-size:17px; max-width:900px; margin:20px auto; color:#444;">
+    हमारी संस्था समय-समय पर भंडारा, सामाजिक सेवा कार्य, धार्मिक आयोजन तथा जनकल्याण से जुड़े विभिन्न कार्यक्रमों का आयोजन करती है, ताकि जरूरतमंद लोगों को सहायता मिल सके और समाज में एकता एवं सहयोग की भावना को मजबूत किया जा सके।
+  </p>
+  <p style="text-align:center; font-size:17px; max-width:900px; margin:20px auto; color:#444;">
+    आप सभी से निवेदन है कि इस पुण्य कार्य में हमारा सहयोग करें और सेवा के इस अभियान का हिस्सा बनें, ताकि हम मिलकर एक बेहतर और सहयोगपूर्ण समाज का निर्माण कर सकें।
+  </p>
+</div>
+
+<!-- WORK -->
+<div class="section" id="work" style="background:#fff; border-radius:20px;">
+  <h3>हमारे सेवा कार्य</h3>
+  <p class="sub">जो कार्य हम पूरे समर्पण के साथ करते हैं</p>
+  <div class="cards">
+    <div class="card"><div class="icon">🍚</div><h4>अन्नदान</h4><p>हर नवरात्रि एवं पूर्णिमा पर भंडारा तथा भोजन वितरण।</p></div>
+    <div class="card"><div class="icon">🤝</div><h4>सेवा भाव</h4><p>जरूरतमंद परिवारों को वस्त्र, दवा एवं सहायता।</p></div>
+    <div class="card"><div class="icon">🎓</div><h4>संस्कार</h4><p>बच्चों को नैतिक शिक्षा एवं संस्कार शिविर।</p></div>
+    <div class="card"><div class="icon">🛕</div><h4>धाम सेवा</h4><p>विंध्याचल धाम में श्रद्धालुओं की सेवा एवं सहयोग।</p></div>
+  </div>
+</div>
+
+<!-- POSTER -->
+<div class="section" id="poster">
+  <h3>हमारा संदेश</h3>
+  <p class="sub">आप सभी श्रद्धालुओं का हार्दिक स्वागत एवं अभिनंदन</p>
+  <div class="poster-wrap">
+    <img src="poster.jpg" alt="Vindhya Annapurna Seva Sadan Poster">
+  </div>
+</div>
+
+<!-- VIDEO -->
+<div class="section" id="video" style="background:#fff; border-radius:20px;">
+  <h3>हमारा वीडियो</h3>
+  <p class="sub">ट्रस्ट के कार्यों की झलक</p>
+  <div class="video-wrap">
+    <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fshare%2Fv%2F19XnZCVPPF%2F&show_text=false&width=734" 
+      style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" 
+      allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+  </div>
+  <p style="text-align:center; margin-top:15px; font-size:15px; color:#666;">Facebook पर पूरा वीडियो देखें: <a href="https://www.facebook.com/share/v/19XnZCVPPF/" target="_blank" style="color:#8B0000; font-weight:700;">यहाँ क्लिक करें</a></p>
+</div>
+
+<!-- NAVRATRI -->
+<div class="section" id="navratri">
+  <div class="navratri-box">
+    <h3>नवरात्रि विशेष 🪔</h3>
+    <p class="sub">माँ के पावन नौ दिनों में विशेष अन्नदान एवं भंडारा</p>
+    <p style="font-size:17px; max-width:800px; margin:auto; color:#444;">
+      नवरात्रि के पावन अवसर पर ट्रस्ट द्वारा विशेष अन्नदान, भंडारा एवं श्रद्धालुओं की सेवा की जाती है। आप सभी श्रद्धालुओं का हार्दिक स्वागत एवं अभिनंदन है।
+    </p>
+    <div style="margin-top:25px;">
+      <a href="#contact" class="btn">नवरात्रि सेवा में जुड़ें</a>
+    </div>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<div class="section" id="contact">
+  <h3>संपर्क करें</h3>
+  <p class="sub">हमसे जुड़ें, सेवा में सहयोग दें</p>
+  <div class="contact-box">
+    <p style="font-size:17px; margin-bottom:15px;">📍 विंध्याचल मंदिर के पास, मिर्जापुर, उत्तर प्रदेश</p>
+    <a href="tel:9076655613">📞 +91 9076655613</a>
+    <a href="mailto:vindhyaanupurnasevasadantrust@gmail.com">📧 vindhyaanupurnasevasadantrust@gmail.com</a>
+    <a href="https://wa.me/919076655613" target="_blank" class="wa-btn">💬 WhatsApp पर बात करें</a>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <p class="jay">🚩 जय माँ विंध्यवासिनी 🚩</p>
+  <div class="social-footer" style="margin:15px 0;">
+    <a href="https://www.instagram.com/vindhyaanupurnasevatrust" target="_blank">📷</a>
+    <a href="https://www.facebook.com/share/v/19XnZCVPPF/" target="_blank">📘</a>
+    <a href="https://youtube.com/@vindhyaanupurnasevasadantrust" target="_blank">▶️</a>
+  </div>
+  <p>© 2025 विंध्य अन्नपूर्णा सेवा सदन चैरिटेबल ट्रस्ट</p>
+  <p style="font-size:13px; color:#FFD700;">सर्वाधिकार सुरक्षित | सेवा में समर्पित</p>
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+<a href="https://wa.me/919076655613" class="whatsapp-float" target="_blank">💬</a>
+
+</body>
+</html>
